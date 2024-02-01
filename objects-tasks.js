@@ -78,3 +78,60 @@ for( let prop in myObject){
     console.log(`${prop} : ${myObject[prop]} | type: ${typeof(myObject[prop])}`);
 }
 */
+
+
+const myDetails = {
+    myName : {
+        firstName : "Shejan",
+        secondName : "Mahamud",
+        thirdName : "Jihad",
+    },
+    fathersName: "Abdul Jalil",
+    mothersName : "Maleka Begum",
+    education : {
+        school : "BIAM Laboratory School & College, Naogaon",
+        college:{
+            firstCollege: "Noagoan Govt. College, Naogaon",
+            scndCollege: "Rajshahi College, Naogaon",
+        },
+        results:{
+            jsc: 5.00,
+            ssc: 5.00,
+            hsc: 5.00,
+        },
+        department:{
+            ssc: "Science",
+            hsc: "Arts",
+            honours: "BBA in Management"
+        },
+        skills: ["HTML", "CSS", "TAILWIND CSS", "BOOTSTRAP", "GIT", "JS"],
+    }
+}
+
+myDetails.isWebDeveloper = true;
+
+
+    for(let prop in myDetails.myName){
+        console.log(`${prop} : ${myDetails.myName[prop]}`)
+    }
+    console.log(`fathersName : ${myDetails.fathersName}`);
+    console.log(`mothersName : ${myDetails.mothersName}`);
+    console.log(`school : ${myDetails.education.school}`);
+    for(let prop in myDetails.education.college){
+        console.log(`College : ${prop} : ${myDetails.education.college[prop]}`)
+    }
+    for(let prop in myDetails.education.results){
+        console.log(`Results : ${prop} : ${myDetails.education.results[prop]}`);
+    }
+    for(let prop in myDetails.education.department){
+        console.log(`Department : ${prop} : ${myDetails.education.department[prop]}`);
+    }
+    let skills = "";
+    for(let i = 0; i < myDetails.education.skills.length; i++){
+        if(i === 0){
+            skills = `${skills}${myDetails.education.skills[i]}`
+        }else{
+            skills = `${skills},${myDetails.education.skills[i]}`
+        }
+    }
+    console.log(`Skills : ${skills}`);
