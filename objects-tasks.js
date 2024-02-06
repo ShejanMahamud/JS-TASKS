@@ -1,5 +1,5 @@
 //Access the golden rod color value in output.
-
+/*
 const colors = {
     red: "#ff0000",
     green: "#00ff00",
@@ -135,3 +135,30 @@ myDetails.isWebDeveloper = true;
         }
     }
     console.log(`Skills : ${skills}`);
+
+    const myObj = {
+        firstName : "Shejan",
+        scndName : "Mahamud",
+        lastName : "Jihad",
+        fullName : function(){
+            return `${this.firstName} ${this.scndName} ${this.lastName}`
+        }
+    }
+    
+    console.log(myObj.fullName());
+    */
+
+    const phones = [
+        { model: "PhoneA", brand: "Iphone", price: 95000 },
+        { model: "PhoneB", brand: "Samsung", price: 40000 },
+        { model: "PhoneC", brand: "Oppo", price: 26000 },
+        { model: "PhoneD", brand: "Nokia", price: 35000 },
+        { model: "PhoneE", brand: "Iphone", price: 105000 },
+        { model: "PhoneF", brand: "HTC", price: 48000 },
+    ];
+    for(let i = 0; i < phones.length; i++){
+        phones[i].isAuthentic=true;
+    }
+
+
+    console.log(phones)

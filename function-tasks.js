@@ -62,3 +62,21 @@ function OddEvenCalc(num){
 }
 console.log(OddEvenCalc(9));
 */
+
+function revserseLetter (str){
+    let word = str.split(" ");
+
+    for(let i = 0; i < word.length; i++){
+        word = word[i].split('').reverse().join("");
+        // Update the word in the array
+        
+     
+    }
+    return word.join(" ");
+
+    
+}
+console.log(revserseLetter('I broke my computer.'));
+console.log(revserseLetter('His last play was a big hit.'));
+
+
